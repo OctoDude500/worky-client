@@ -103,7 +103,7 @@ if (isset($_POST['submit'])) {
         $curl_handle = curl_init();
         curl_setopt($curl_handle,CURLOPT_URL, "http://localhost:8000/testing");
         curl_setopt($curl_handle, CURLOPT_POST, 1);
-        curl_setopt($curl_handle, CURLOPT_POSTFIELDS, "name=$name&email=$email_one&email_confirm=$email_two&phone=$phone&language=$language&work=$workplace&attempts=$attempts&location=$location");
+        curl_setopt($curl_handle, CURLOPT_POSTFIELDS, "name=$name&email=$email_one&email_confirm=$email_two&phone=$phone&language=$language&workplace=$workplace&attempts=$attempts&location=$location");
         $res = curl_exec($curl_handle);
         curl_close($curl_handle);
         if ($res) {

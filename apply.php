@@ -9,11 +9,11 @@
                     <?php //echo $nameErr ?>
                     <?php
                     if (!empty($errors)){
-                        echo "<p>is  not empty</p>";
+                        echo "<p>is  not empty. can't post</p>";
                     } ?>
                     <?php
-                        if(!$is_success) {
-                            echo "<?php <p>can´t post</p>";
+                        if($is_success) {
+                            echo "<?php <p>sent!</p>";
 
                         }
                     ?>
@@ -80,7 +80,7 @@
                             <select name="workplace" id="workplace">
                                 <option value="default" selected disabled>Select workplace</option>
                                 <option value="home">From Home (WFH)</option>
-                                <option value="on_site">On Site</option>
+                                <option value="site">On Site</option>
                             </select>
                             <small><?php echo $workplaceErr?></small>
                          </div>
@@ -98,8 +98,8 @@
                             <label for="location">Choose your preferred location</label>
                             <select name="location" id="location">
                                 <option value="default" selected disabled>Select location</option>
-                                <option value="guatemala">Guatemala</option>
-                                <option value="xela">Xela</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="XL">Xela</option>
                             </select>
                             <small><?php echo $locationErr?></small>
                         </div>
