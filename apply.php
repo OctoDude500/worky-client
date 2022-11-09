@@ -9,7 +9,7 @@
                     <?php //echo $nameErr ?>
                     <?php
                     if (!empty($errors)){
-                        echo "<p>is  not empty. can't post</p>";
+                        echo "<p>not empty. can't post</p>";
                     } ?>
                     <?php
                         if($is_success) {
